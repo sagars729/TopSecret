@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
+	<body style="background-image: url('background.jpg')">
+		<h1 class="centerhor multicolortext" style="font-size:300%;">HAPPY BIRTHDAY SANJAY!!!</h1>
+		<div id="flyimage1" style="position:absolute; left: -500px; width:47; height:68;"> <img src="1_new.png" border=0></a> </div>
+		<div id="flyimage2" style="position:absolute; left: -500px; width:47; height:68;"> <img src="2_new.png" border=0></a> </div>
+		<div id="flyimage3" style="position:absolute; left: -500px; width:47; height:68;"> <img src="3_new.png" border=0></a> </div>
+		<div id="flyimage4" style="position:absolute; left: -500px; width:47; height:68;"> <img src="4_new.png" border=0></a> </div>
+		<div id="flyimage5" style="position:absolute; left: -500px; width:47; height:68;"> <img src="5_new.png" border=0></a> </div>
+		<div id="flyimage6" style="position:absolute; left: -500px; width:47; height:68;"> <img src="6_new.png" border=0></a> </div>
+		<div id="flyimage7" style="position:absolute; left: -500px; width:47; height:68;"> <img src="7_new.png" border=0></a> </div>
+		<div id="flyimage8" style="position:absolute; left: -500px; width:47; height:68;"> <img src="8_new.png" border=0></a> </div>
+		<div id="flyimage9" style="position:absolute; left: -500px; width:47; height:68;"> <img src="9_new.png" border=0></a> </div>
+		<div id="flyimage10" style="position:absolute; left: -500px; width:47; height:68;"> <img src="10_new.png" border=0></a> </div>
+		<div id="flyimage11" style="position:absolute; left: -500px; width:47; height:68;"> <img src="11_new.png" border=0></a> </div>
+	</body>
+
+	<script type="text/javascript" src="moveobj.js"> </script>
+	<script type="text/javascript">
+	/***********************************************
+	* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+	* Modified by Dynamic Drive for various improvements
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+	***********************************************/
+	
+	
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3, flyimage4, flyimage5
+var flyimage6, flyimage7, flyimage8, flyimage9, flyimage10
+var flyimage11, flyimage12, flyimage13, flyimage14, flyimage15
+var flyimage16, flyimage17, flyimage18, flyimage19, flyimage20
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+	flyimage1=new Chip("flyimage1",47,68);
+	flyimage2=new Chip("flyimage2",47,68);
+	flyimage3=new Chip("flyimage3",47,68);
+	flyimage4=new Chip("flyimage4",47,68);
+	flyimage5=new Chip("flyimage5",47,68);
+	flyimage6=new Chip("flyimage6",47,68);
+	flyimage7=new Chip("flyimage7",47,68);
+	flyimage8=new Chip("flyimage8",47,68);
+	flyimage9=new Chip("flyimage9",47,68);
+	flyimage10=new Chip("flyimage10",47,68);
+	flyimage11=new Chip("flyimage11",47,68);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+	for(var i = 1; i <= 11; i++) 
+		movechip("flyimage" + i.toString());
+//movechip("flyimage2");
+//movechip("flyimage3");
+
+	}
+	
+	if (window.addEventListener)
+	window.addEventListener("load", pagestart, false)
+	else if (window.attachEvent)
+	window.attachEvent("onload", pagestart)
+	else if (document.getElementById)
+	window.onload=pagestart
+	
+	</script>
+
+</html>

@@ -1,0 +1,22 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.centerhor{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.multicolortext {
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);  
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text; 
+	background-clip: text;
+	color: transparent;
+}
